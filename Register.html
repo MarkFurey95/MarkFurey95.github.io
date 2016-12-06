@@ -1,0 +1,168 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Register</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+
+  <link rel="stylesheet" type="text/css" href="style/style.css" />
+   
+</head>
+
+
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+         
+          <h1><a href="index.html">RugbyRecruit<span class="logo_colour">Ireland</span></a></h1>
+          <h2>A recruitment website for players across Ireland</h2>
+        </div>
+
+      </div>
+     <div id="wrap">
+      <ul class="navbar">
+       <li><a href="index.html">Home</a></li>
+       <li><a href="#">News</a>
+        <ul>
+           <li><a href="IrishRugbyNews.html">Irish Rugby</a></li>
+           <li><a href="NewRecruits.html">New Recruits</a></li>
+           <li><a href="NewCoaches.html">New Coaches</a></li>
+        </ul>         
+       </li>
+       <li><a href="#">Meet The Coaches</a>
+        <ul>
+           <li><a href="ProvincialCoaches.html" >All Coaches</a></li>
+        </ul>         
+       </li>
+       <li><a href="#">Meet The Players</a>
+        <ul>
+           <li><a href="Male.html">Male</a></li>
+           <li><a href="Female.html">Female</a></li>
+        </ul>         
+       </li>
+       <li><a href="#">About Us</a>
+        <ul>
+           <li><a href="AboutUs.html">Meet The Team</a></li>
+         
+        </ul>         
+       </li>
+       <li><a href="Contact us.html">Contact us</a>
+       
+       </li>
+       <li> <a href = "Login.html"> Login </a>
+       </li>
+       <li><a href =  "Register.html"> Register </a>
+       </li>
+
+      </ul>
+</div>
+    </div>
+    <div id="content_header"></div>
+    <div id="site_content">
+      <div id="banner"></div>
+    <div id="sidebar_container">
+        <div class="sidebar">
+          <div class="sidebar_top"></div>
+          <div class="sidebar_item">
+           
+           
+            <h3>Welcome</h3>
+            <h4>Having trouble ?</h4>
+           
+            <p>These fields are case sensitive so make sure your caps lock isnt on and that your password and username are correct. Any problems just navagate to the contact us page and your problem will be solved shortly. If you have forgotten your password send us an email and we will issue you wth a new one</p>
+          </div>
+          <div class="sidebar_base"></div>
+        </div>
+        <div class="sidebar">
+          <div class="sidebar_top"></div>
+          <div class="sidebar_item">
+          <h3>Useful Links</h3>
+            <ul>
+              <li><a href="http://www.irishrugby.ie/home.php">IrishRugby</a></li>
+              <li><a href="http://www.leinsterrugby.ie">Leinster Rugby</a></li>
+              <li><a href="http://www.munsterrugby.ie">Munster Rugby</a></li>
+              <li><a href="http://www.ulsterrugby.com">Ulster Rugby</a></li>
+              <li><a href="http://www.connachtrugby.ie/">Connacht Rugby</a></li>
+              <li><a href="http://www.studentsport.ie/?page_id=12177">Collegiate Rugby</a></li>
+            </ul>
+          </div>
+          <div class="sidebar_base"></div>
+        </div>
+        <div class="sidebar">
+          <div class="sidebar_top"></div>
+          <div class="sidebar_item">
+            <h3>Search</h3>
+            <form method="post" action="#" id="search_form">
+              <p>
+                <input class="search" type="text" name="search_field" value="Enter keywords....." />
+                <input name="search" type="image" style="border: 0; margin: 0 0 -9px 5px;" src="style/search.png" alt="Search" title="Search" />
+              </p>
+            </form>
+          </div>
+          <div class="sidebar_base"></div>
+        </div>
+      </div>
+      <div id="content">
+
+        <?php
+
+if (empty($_post)== FALSE){
+  ECHO 'Form submitted';
+}
+
+
+
+?>
+        <form action = "" method = "post">
+        <ul>
+          <li>
+            First name: <br>
+            <input type= "text" name = "first_name">
+          </li>
+           <li>
+            Last name: <br>
+            <input type= "text" name = "last_name">
+          </li>
+          <li>
+            Email: <br>
+            <input type= "text" name = "email">
+          </li>
+          <li>
+           Password: <br>
+            <input type= "password" name = "password">
+          </li>
+          <li>
+           Re-enter password: <br>
+            <input type= "password" name = "password_again">
+          </li>
+
+
+
+
+
+        </ul>
+       
+         <input type="submit" value="Sign up"/> 
+                </p>
+                                 
+                  Already a member ?
+                  <a href="login.html"> Go and log in </a>
+                </p>
+                            </form>
+                        </div>
+
+
+        
+      </div>
+    </div>
+   <div id="content_footer"></div>
+    <div id="footer">
+      <p><a href="index.html">Home</a> | <a href="AboutUs.html">About Us</a> | <a href="IrishRugbyNews.html">News</a> | <a href="NewRecruits.html">Players</a> | <a href="Contact us.html">Contact Us</a></p>
+      <p> Author: Mark Furey | Disclaimer: This is a college project and is a non profit-website  | </p>
+    </div>
+  </div>
+</body>
+</html>
